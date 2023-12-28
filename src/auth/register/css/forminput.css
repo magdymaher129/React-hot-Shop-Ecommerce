@@ -1,0 +1,31 @@
+
+.forminput label{
+    font-weight: 500;
+    font-size: larger;
+    padding:0 10px 5px 10px;
+    color:grey;
+    width:100%;
+    text-transform: capitalize;
+    
+}
+.forminput label:hover{
+    color:yellow
+}
+.forminput input{
+    border-radius: 5px;
+    height:40px;
+     width: 100%;
+}
+.forminput> .error{
+    color:red;
+    display:none;
+    text-align: left;
+   padding:2px;
+   font-size: 18px;
+}
+.error:hover{
+    color:#f2f2f2;
+}
+.forminput>input:invalid[focused=true] ~.error{
+display:block;
+}
